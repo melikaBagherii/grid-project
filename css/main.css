@@ -10,3 +10,27 @@
     grid-template-columns: repeat(6,1fr);
     font-family: sans-serif;
 }
+
+.section-title{
+    font-size: 30px;
+    color: orange;
+    text-align: center;
+    padding: 25px;
+}
+
+.section-title::before, .section-title::after{
+    height: 1px;
+    width: 5%;
+    background-color: black;
+    content: "";
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.section-title::before{
+    right: 0.5rem;
+}
+.section-title::after{
+    left: 0.5rem;
+}
