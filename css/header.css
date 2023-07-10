@@ -1,0 +1,4 @@
+.header{
+    background-color: lightblue;
+    grid-column: 1/-1;
+}
