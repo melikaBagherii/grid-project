@@ -1,4 +1,47 @@
 .footer{
-    background-color: forestgreen;
     grid-column: 1/-1;
+    background-color: whitesmoke;
+    border-top: 1px solid black;
+    margin: 1rem 0px;
 }
+
+.footer-section{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 8px;
+    padding: 30px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: all 0.1s;
+}
+
+li:hover{
+    color: orange;
+}
+.telegram:hover{
+    color: rgb(1, 134, 228);
+}
+.youtube:hover{
+    color: rgb(228, 1, 1);
+}
+.whatsapp:hover{
+    color: rgb(6, 209, 36);
+}
+
+/* @media screen and (max-width:700px) {
+    .footer-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,200px);
+    }
+    
+} */
